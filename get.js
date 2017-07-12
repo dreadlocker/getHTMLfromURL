@@ -1,7 +1,7 @@
 require('isomorphic-fetch');
 // node .\get.js > aaa.html     v terminala na VScode
 
-parseTvData = (url) => {
+const parseTvData = (url) => {
     return fetch(url)
         .then((responce) => {
             if (!responce.ok) {
